@@ -52,8 +52,8 @@
   .hero {
     background-image: url(/img/yacht-table.png);
   }
-  .container {
-    padding: 280px 32px 282px 32px;
+  .hero-container {
+    padding: 280px 0 282px 0;
   }
   .hero-title {
     font-size: 80px;
@@ -74,8 +74,8 @@
   .hero {
     background-image: url(/img/yacht-pc.png);
   }
-  .container {
-    padding: 235px 140px 215px 140px;
+  .hero-container {
+    padding: 235px 0 215px 0;
   }
   .hero-title {
     font-size: 80px;
