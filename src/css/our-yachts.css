@@ -2,16 +2,21 @@
 }
 
 .our-yachts-title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  text-align: center;
   width: 319px;
   margin-bottom: 40px;
   text-align: center;
-  color: #fbfbfb;
   margin-left: auto;
   margin-right: auto;
 }
 
 .our-yachts-list {
   display: flex;
+  width: 100%;
   margin-bottom: 40px;
 }
 
@@ -72,7 +77,7 @@
   letter-spacing: 0.03em;
   text-align: left;
   text-transform: uppercase;
-  color: rgba(4, 3, 6, 1);
+  color: rgba(4, 3, 6, 0.4);
 }
 
 .yacht-description {
@@ -89,7 +94,7 @@
   font-weight: 400;
   line-height: 17px;
   letter-spacing: 0.03em;
-  color: rgba(4, 3, 6, 1);
+  color: rgba(4, 3, 6, 0.4);
   text-transform: uppercase;
 }
 
@@ -109,25 +114,60 @@
   color: rgba(4, 3, 6, 1);
 }
 
-.yacht-rental-btn {
+.yacht-rental-link {
   padding: 14px 32px;
-  border-radius: 15px;
   border: 1px solid rgba(251, 251, 251, 0.35);
+  border-radius: 15px;
   background-color: transparent;
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
   letter-spacing: -0.02em;
   color: #fbfbfb;
+  text-align: center;
   display: block;
-  min-width: 141px;
   margin-left: auto;
   margin-right: auto;
+  width: 179px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.yacht-rental-btn:focus,
-.yacht-rental-btn:active,
-.yacht-rental-btn:hover {
+.yacht-rental-link:focus,
+.yacht-rental-link:active,
+.yacht-rental-link:hover {
   background-color: #1b414b;
   color: #fbfbfb;
+}
+
+@media screen and (min-width: 768px) {
+  .our-yachts-title {
+    font-size: 48px;
+    line-height: 48px;
+    width: 645px;
+    margin-bottom: 75px;
+  }
+
+  .our-yachts-list {
+    gap: 32px;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+
+  .our-yacht-item-two {
+    display: block;
+  }
+  .yacht-rental-link {
+    padding: 16px 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .our-yacht-item-three {
+    display: block;
+  }
+
+  .our-yachts-list {
+    gap: 25px;
+  }
 }
