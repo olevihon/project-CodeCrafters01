@@ -7,11 +7,17 @@
   line-height: 1;
   letter-spacing: -0.02em;
   text-align: center;
-  width: 319px;
   margin-bottom: 40px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .our-yachts-title {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 }
 
 .our-yachts-list {
@@ -39,6 +45,14 @@
   width: 302px;
 }
 
+/* HOOK */
+@media screen and (max-width: 374px) {
+  .our-yachts-img {
+    width: calc(100% - 32px);
+    height: auto;
+  }
+}
+
 .our-yachts-general-description {
   padding: 32px;
   position: relative;
@@ -46,6 +60,7 @@
 
 .yacht-type {
   margin-bottom: 32px;
+  position: relative;
 }
 
 .yacht-type::after {
@@ -53,7 +68,8 @@
   border: 1px solid rgba(4, 3, 6, 0.1);
   width: 100%;
   position: absolute;
-  margin-top: 16px;
+  top: calc(100% + 16px);
+  left: 0;
 }
 
 .yacht-type-list {
