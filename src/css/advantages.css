@@ -4,21 +4,15 @@
 .advantages-ul {
   background-color: #1b414b;
   border-radius: 24px;
+  list-style-type: none;
+  width: 335px;
+  height: 642px;
+  display: flex;
+  flex-direction: column;
   row-gap: 40px;
-}
-
-.advantages-description {
-  padding-left: 24px;
-  padding-right: 24px;
-  margin-bottom: 40px;
-}
-
-.advantages-description:first-child {
-  padding-top: 80px;
-}
-
-.advantages-description:last-child {
-  padding-bottom: 80px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .advantages-title {
@@ -26,16 +20,15 @@
   font-size: 28px;
   line-height: 1;
   letter-spacing: -0.05em;
-  margin-bottom: 18px;
 }
 
 .advantages-span {
   border-radius: 18px;
-  width: 100%;
+  min-width: 295px;
   height: 2px;
   background: rgba(251, 251, 251, 0.1);
   display: block;
-  margin-bottom: 18px;
+  margin: 18px 0;
 }
 
 .advantages-text {
@@ -63,31 +56,19 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
-  .advantages-description {
-    padding-left: 32px;
-    padding-right: 32px;
+  .advantages-ul {
+    width: 704px;
+    height: 424px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    row-gap: 44px;
   }
 
   .advantages-span {
     width: 304px;
   }
 
-  .advantages-ul {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 44px;
-  }
-
-  .advantages-description {
-    width: calc((100% - 32px) / 2);
-    margin-bottom: 0px;
-  }
   .advantages-description:nth-child(1),
   .advantages-description:nth-child(2) {
     padding-top: 90px;
@@ -98,8 +79,9 @@
     padding-bottom: 90px;
   }
 
-  .advantages-description:ch {
-    padding-top: 80px;
+  .advantages-text {
+    font-size: 13px;
+    line-height: 1.15;
   }
 
   .advantages-pictures {
@@ -116,23 +98,18 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
   .advantages-section {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .advantages-ul {
     max-width: 716px;
-    width: 424px;
   }
 
   .advantages-pictures {
-    margin-top: 0px;
     margin-left: 32px;
+    margin-top: 0;
   }
 }
