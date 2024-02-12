@@ -9,30 +9,35 @@
   border-radius: 24px;
 }
 
+.about-us-text-part {
+  padding: 40px 20px;
+}
+
 .about-us-title {
+  max-width: 295px;
   font-weight: 500;
   font-size: 28px;
   line-height: 1;
   letter-spacing: -0.02em;
-  padding: 40px 20px;
   color: #1b414b;
-  margin-bottom: 0;
+  margin-bottom: 40;
 }
 
 .about-us-benefit-first {
+  max-width: 295px;
   font-size: 18px;
   line-height: 1;
   letter-spacing: -0.02em;
   color: #1b414b;
-  padding: 0 20px 20px 20px;
+  margin-bottom: 20px;
 }
 
 .about-us-benefit-second {
+  max-width: 295px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
   color: #040306;
-  padding: 0 20px 40px 20px;
   opacity: 0.5;
 }
 
@@ -44,19 +49,21 @@
 @media screen and (min-width: 768px) {
   .about-us-title {
     font-size: 48px;
-    padding: 50px 136px 50px 32px;
-    margin-bottom: 0;
+    max-width: 536px;
+    margin-bottom: 50px;
+  }
+
+  .about-us-benefits {
+    width: 389px;
   }
 
   .about-us-benefit-first {
     font-size: 23px;
-    padding: 0 283px 20px 32px;
   }
 
   .about-us-benefit-second {
     font-size: 13px;
     line-height: 1.15;
-    padding: 20px 287px 50px 32px;
   }
 }
 
@@ -69,22 +76,21 @@
     display: flex;
     gap: 189px;
     margin-top: 0;
-    padding: 50px 0px 166px 50px;
+    margin-bottom: 0;
   }
 
   .about-us-benefits {
-    margin-left: 0;
+    margin-left: auto;
     margin-right: 0;
+    width: 354px;
   }
 
   .about-us-benefit-first {
     font-size: 23px;
-    padding: 50px 50px 20px 189px;
   }
 
   .about-us-benefit-second {
     font-size: 13px;
     line-height: 1.15;
-    padding: 0px 50px 100px 189px;
   }
 }
