@@ -54,20 +54,22 @@
   }
 
   .about-us-text-part {
-    padding: 50px 136px 50px 32px;
+    padding: 50px 32px 50px 32px;
   }
 
   .about-us-benefits {
-    width: 389px;
+    max-width: 389px;
   }
 
   .about-us-benefit-first {
     font-size: 23px;
+    max-width: none;
   }
 
   .about-us-benefit-second {
     font-size: 13px;
     line-height: 1.15;
+    max-width: none;
   }
 }
 
@@ -88,7 +90,7 @@
   }
 
   .about-us-benefits {
-    width: auto;
+    width: 354px;
     margin-left: auto;
   }
 
